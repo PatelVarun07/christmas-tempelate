@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./style/style.css";
+import SantaImg from './images/santa.png'
+import treeImg from "./images/tree.png";
+import PrticalBg from "./components/PrticalBg";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<PrticalBg />
+			<div className="Christmas-tempelate">
+				<div className="main-section">
+					<div className="santa-image">
+						<img src={SantaImg} alt="" />
+					</div>
+
+					<div className="trees-image">
+						<img src={treeImg} alt="" />
+					</div>
+				</div>
+			</div>
+		</>
+	);
 }
 
 export default App;
